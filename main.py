@@ -70,15 +70,7 @@ async def on_message(message):
             await us.send("Thanks for applying. ")
 
             channel = client.get_channel(863271725947813928)
-            '''
-            s=''
-            s=s+(f'Discord ID: \n {answers[0]}\n')
-
-
-            for i in range(1,len(questions)):
-                s=s+(f'{questions[i]} \n {answers[i]} \n')
-
-            '''
+           
             emb = discord.Embed(title='New application',
                                 description="",
                                 color=0x00ff00)
