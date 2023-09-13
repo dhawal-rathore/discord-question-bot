@@ -1,6 +1,10 @@
 import discord
 import os
 
+TOKEN = "enter your bot code here"
+RESULT_CHANNEL_ID = 863271725947813928
+
+
 f = open("log.txt", 'a')
 client = discord.Client()
 
@@ -69,7 +73,7 @@ async def on_message(message):
         if send:
             await us.send("Thanks for applying. ")
 
-            channel = client.get_channel(863271725947813928)
+            channel = client.get_channel(RESULT_CHANNEL_ID)
            
             emb = discord.Embed(title='New application',
                                 description="",
@@ -102,5 +106,4 @@ async def on_reconnect():
     print('We have relogged in as {0.user}'.format(client))
 
 
-TOKEN="enter your bot code here"
 client.run(TOKEN)
