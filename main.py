@@ -1,5 +1,4 @@
 import discord
-import os
 
 TOKEN = "enter your bot code here"
 RESULT_CHANNEL_ID = 863271725947813928
