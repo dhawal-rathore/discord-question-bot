@@ -3,6 +3,7 @@ import os
 
 TOKEN = "enter your bot code here"
 RESULT_CHANNEL_ID = 863271725947813928
+PING_ROLE_ID = 775568100472651817
 
 
 f = open("log.txt", 'a')
@@ -82,7 +83,7 @@ async def on_message(message):
                 emb.add_field(name=f'{questions[i]}',
                               value=f'{answers[i]}',
                               inline=False)
-            await channel.send('<@&775568100472651817>')
+            await channel.send(f'<@&{PING_ROLE_ID}>')
             await channel.send(embed=emb)
         else:
             await us.send("Cancelled application.")
