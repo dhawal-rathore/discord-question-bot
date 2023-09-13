@@ -32,5 +32,7 @@ Go to the application page you created and add it to your server.
 # Using the bot
 
 Run main.py on an computer connected to the internet. If terminal prints
+
 We have logged in as ...
+
 The bot is online.
